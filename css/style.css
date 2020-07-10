@@ -8,6 +8,10 @@
   border: 1px solid #000;
 }
 
+.row {
+  height: 300px;
+}
+
 [class*="col-"] {
   height: 100%;
   background-color: pink;
@@ -20,10 +24,11 @@
   left: 50%;
   transform: translate(-50% , -50%);
 }
-.row {
-  height: 300px;
-}
-.container .row:last-child {
-  background-color: lightpink;
+
+.nest {
   padding: 5px;
+}
+.nest [class*="col-"] {
+  background-color: lightcoral;
+  border: 1px solid #fff;
 }
