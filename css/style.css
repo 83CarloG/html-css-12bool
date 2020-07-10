@@ -23,3 +23,7 @@
 .row {
   height: 300px;
 }
+.container .row:last-child {
+  background-color: lightpink;
+  padding: 5px;
+}
